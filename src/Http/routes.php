@@ -28,7 +28,7 @@ Route::group(['prefix' => 'admin','middleware' => '\Woldy\Cms\Http\Middleware\Ad
 	Route::post('/model/edit/{table}', 'Admin\ModelController@postEdit');
 	Route::get('/model/list', 'Admin\ModelController@getList');
 
-	Route::get('/mitem/list/{table}', 'Admin\MitemController@getList');
+	Route::get('/mitem/list/{table}', 'Admin\mItemController@getList');
 
 	Route::get('/model/config/list/{table}', 'Admin\Model\ConfigController@getList');
 	Route::get('/model/config/form/{table}', 'Admin\SettingController@getForm');
